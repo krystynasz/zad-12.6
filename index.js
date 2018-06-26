@@ -18,7 +18,7 @@ function showCountriesList(resp) {
     countriesList.innerHTML = '';
     resp.forEach(function(item) {
        var liEl = document.createElement('tr');
-        liEl.innerHTML = "<td class='country-name'>Name: </td><td>"+ item.name+ "</td>";
+        liEl.innerHTML = '<td class="country-name">Name: </td><td>'+ item.name+ '</td>';
         countriesList.appendChild(liEl);
         var capital = document.createElement('tr');
         capital.innerHTML = "<td>Capital: </td><td>"+ item.capital+ "</td>";
