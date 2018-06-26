@@ -8,14 +8,12 @@ function showCountriesList(resp) {
 var searchCountries = function() {
     var countryName = document.getElementById('country-name').value;
 
-    if(!countryName.length) {
-        countryName = "Poland";
-        fetch(url + countryName)
+    if(!countryName.length)  countryName = "Poland";
+    fetch(url + countryName)
         .then(function(resp) {
             return resp.json();
         })
         .then(showCountriesList);
-    }
 }
 
 document.getElementById('search').addEventListener("click", searchCountries);
