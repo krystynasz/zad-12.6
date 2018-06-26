@@ -18,8 +18,11 @@ function showCountriesList(resp) {
     countriesList.innerHTML = '';
     resp.forEach(function(item) {
        var liEl = document.createElement('li');
-        liEl.innerText = item.name + item.capital;
+        liEl.innerText = item.name;
         countriesList.appendChild(liEl);
+        var capital = document.createElement('li');
+        capital.innerText = item.capital;
+        countriesList.appendChild(capital);
     });
 }
 
