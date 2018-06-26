@@ -21,7 +21,7 @@ function showCountriesList(resp) {
         liEl.innerText = item.name;
         countriesList.appendChild(liEl);
         var capital = document.createElement('li');
-        capital.innerText = item.capital;
+        capital.innerText = "capital: " + item.capital;
         countriesList.appendChild(capital);
     });
 }
