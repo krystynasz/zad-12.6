@@ -21,10 +21,10 @@ function showCountriesList(resp) {
         liEl.innerText = item.name;
         countriesList.appendChild(liEl);
         var capital = document.createElement('li');
-        capital.innerText = item.capital;
+        capital.innerText = "Capital: " + item.capital;
         countriesList.appendChild(capital);
         var population = document.createElement('li');
-        population.innerText = item.population;
+        population.innerText = "Population: " + item.population;
         countriesList.appendChild(population);
     });
 }
