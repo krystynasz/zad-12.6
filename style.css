@@ -1,12 +1,16 @@
-
-td {
-    border: 1px solid black;
+table {
     text-align: center;
     padding: 5px;
+border: 1px solid black;
+
+td {
+   
     font-size: 20px;
 }
 .country-name {
     background-color: grey;
     color: white;
     font-size: 40px;
+    text-transform: uppercase;
+ 
 }
