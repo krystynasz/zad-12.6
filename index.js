@@ -26,6 +26,9 @@ function showCountriesList(resp) {
         var population = document.createElement('tr');
         population.innerHTML = "<td>Population: </td><td>"+ item.population+ " people</td>";;
         countriesList.appendChild(population);
+        var nativeName = document.createElement('tr');
+        nativeName.innerHTML = "<td>Native name: </td><td>"+ item.nativeName + "</td>";;
+        countriesList.appendChild(nativeName);
     });
 }
 
