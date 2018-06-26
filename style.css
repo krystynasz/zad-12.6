@@ -3,6 +3,8 @@
 body {
     font-family: 'IM Fell English SC', serif;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -16,12 +18,10 @@ button {
 table {
     text-align: center;
     padding: 5px;
-border: 1px solid black;
     width: 30vw;
 }
 
 td {
-   
     font-size: 20px;
 }
 
