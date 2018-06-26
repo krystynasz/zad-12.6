@@ -17,13 +17,13 @@ document.getElementById('search').addEventListener("click", searchCountries);
 function showCountriesList(resp) {
     countriesList.innerHTML = '';
     resp.forEach(function(item) {
-       var liEl = document.createElement('td');
+       var liEl = document.createElement('tr');
         liEl.innerText = item.name;
         countriesList.appendChild(liEl);
-        var capital = document.createElement('td');
+        var capital = document.createElement('tr');
         capital.innerText = "Capital: " + item.capital;
         countriesList.appendChild(capital);
-        var population = document.createElement('td');
+        var population = document.createElement('tr');
         population.innerText = "Population: " + item.population;
         countriesList.appendChild(population);
     });
