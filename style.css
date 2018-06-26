@@ -3,14 +3,16 @@
 body {
     font-family: 'IM Fell English SC', serif;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+
+}
+
+header {
     background-image: url("https://i.pinimg.com/originals/34/9e/b2/349eb2156a0a58dca336c70de2a4eeb3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 200px;
 }
-
 h1 {
     font-size: 60px;
     color: #2c3e50;
