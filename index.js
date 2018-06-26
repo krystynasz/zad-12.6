@@ -23,6 +23,9 @@ function showCountriesList(resp) {
         var capital = document.createElement('li');
         capital.innerText = item.capital;
         countriesList.appendChild(capital);
+        var population = document.createElement('li');
+        population.innerText = item.population;
+        countriesList.appendChild(population);
     });
 }
 
