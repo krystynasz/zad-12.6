@@ -1,10 +1,6 @@
 var url = 'https://restcountries.eu/rest/v1/name/';
 var countriesList = document.getElementById('countries');
 
-function showCountriesList(resp) {
-    countriesList.innerHTML = '';
-}
-
 var searchCountries = function() {
     var countryName = document.getElementById('country-name').value;
 
@@ -17,3 +13,7 @@ var searchCountries = function() {
 }
 
 document.getElementById('search').addEventListener("click", searchCountries);
+
+function showCountriesList(resp) {
+    countriesList.innerHTML = '';
+}
