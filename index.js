@@ -18,13 +18,13 @@ function showCountriesList(resp) {
     countriesList.innerHTML = '';
     resp.forEach(function(item) {
        var liEl = document.createElement('tr');
-        liEl.innerHTML = "<td>Name of the country</td><td>"+ item.name+ "</td>";
+        liEl.innerHTML = "<td>Name: </td><td>"+ item.name+ "</td>";
         countriesList.appendChild(liEl);
         var capital = document.createElement('tr');
-        capital.innerText = "Capital: " + item.capital;
+        capital.innerHTML = "<td>Capital: </td><td>"+ item.capital+ "</td>";
         countriesList.appendChild(capital);
         var population = document.createElement('tr');
-        population.innerText = "Population: " + item.population;
+        population.innerHTML = "<td>Population: </td><td>"+ item.population+ " people</td>";;
         countriesList.appendChild(population);
     });
 }
