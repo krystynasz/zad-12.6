@@ -2,12 +2,14 @@
 
 body {
     font-family: 'IM Fell English SC', serif;
+    margin: 0 auto;
 }
 
 table {
     text-align: center;
     padding: 5px;
 border: 1px solid black;
+    width: 30vw;
 }
 
 td {
