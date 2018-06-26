@@ -29,6 +29,9 @@ function showCountriesList(resp) {
         var nativeName = document.createElement('tr');
         nativeName.innerHTML = "<td>Native name: </td><td>"+ item.nativeName + "</td>";;
         countriesList.appendChild(nativeName);
+        var frenchName = document.createElement('tr');
+        frenchName.innerHTML = "<td>Name in French: </td><td>"+ item.translations.fr + "</td>";;
+        countriesList.appendChild(frenchName);
     });
 }
 
